@@ -27,6 +27,15 @@ document.getElementById("forms").addEventListener("submit", function(e){
     } else if(!inputEmailValue.value.split("@")[1].includes(".com")){
         error.innerText = 'Email must contain .com after @';
         return;
+    }else if(email.split("@")[0].length === 0){
+        error.innerText = 'There must be a word before @';
+        return;
+    }else if(email.split("@")[1].length === 0){
+        error.innerText = 'There must be a word after @';
+        return;
+    }else if(!email.split("@")[1].includes(".")){
+        error.innerText = 'There must be a . after @';
+        return;
     }
 
     if(inputTelephoneValue.value == "") 
