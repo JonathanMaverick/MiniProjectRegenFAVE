@@ -3,7 +3,7 @@ let inputEmailValue = document.getElementById("email");
 let inputTelephoneValue = document.getElementById("phone");
 let inputMessageValue = document.getElementById("messageBox");
 let error = document.getElementById("error");
-
+let regex = new RegExp('[a-z0-9]+@[a-z]+.com');
 
 document.getElementById("forms").addEventListener("submit", function(e){
     e.preventDefault();
@@ -21,22 +21,10 @@ document.getElementById("forms").addEventListener("submit", function(e){
     if(inputEmailValue.value === ""){
         error.innerText = 'Please enter your email';
         return;
-    } else if(inputEmailValue.value.split("@").length === 1 || inputEmailValue.value.split("@").length > 2){
-        error.innerText = 'Email must contain one @';
+    } else if(!regex.test(inputEmailValue.value) == true){
+        error.innerText =  "Email is not valid'";
         return;
-    } else if(!inputEmailValue.value.split("@")[1].includes(".com")){
-        error.innerText = 'Email must contain .com after @';
-        return;
-    }else if(email.split("@")[0].length === 0){
-        error.innerText = 'There must be a word before @';
-        return;
-    }else if(email.split("@")[1].length === 0){
-        error.innerText = 'There must be a word after @';
-        return;
-    }else if(!email.split("@")[1].includes(".")){
-        error.innerText = 'There must be a . after @';
-        return;
-    }
+    } 
 
     if(inputTelephoneValue.value == "") 
     {
