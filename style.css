@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Golos Text', sans-serif;
+}
+
+body{
+    background-color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contact{
+    margin-top: 40px;
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+
+#desc{
+    margin-bottom: 30px;
+}
+
+#container{
+    background-color: white;
+    display: flex;
+    box-shadow: 20px 20px 50px 15px grey;
+    flex-direction: row;
+    width: 1000px;
+    height: 500px;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+#left{
+    background-color: #020f54;
+    width: 35%;
+    border-radius: 10px;
+}
+
+#left h1{
+    font-size: 20px;
+    margin: 40px 30px 5px 30px;
+    color: white;
+}
+
+#left p{
+    color: white;
+    font-size: 12px;
+}
+
+.desc1{
+    margin: 0px 30px;
+}
+
+#link{
+    color: blue;
+    text-decoration: none;
+}
+
+.region{
+    margin: 30px 30px 0px 30px;
+    color: grey;
+    font-size: 10px;
+}
+
+.fill{
+    margin: 8px 30px 5px 30px;
+    color: white;
+    font-size: 12px;
+}
+
+#instagram {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 10px;
+    margin: 180px 30px 10px 30px;
+    color: white;
+    justify-content: flex-start;
+    column-gap: 5px;
+}
+
+#instagram button{
+    background: none;
+    font-size: 10px;
+    border-color: transparent;
+    text-decoration: none;
+    color: white;
+}
+
+#instagram button a{
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+}
+
+#instagram button a img{
+    margin: 10px 0px -4px 0px;
+    width: 20px;
+    color: white;
+    background-color: #020f54;
+}
+
+#right{
+    padding-right: 20px;
+}
+
+#right form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-size: 13px;
+    margin: 30px 40px 20px 40px;
+    line-height: 1rem;
+}
+
+#right form input{
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border-width: thin;
+    border-color: grey;
+    width: 600px;
+}
+
+#messageBox{
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border-width: thin;
+    border-color: gray;
+    width: 600px;
+    resize: none;
+    height: 130px;
+}
+
+#submits{
+    background-color: blue;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 20px;
+    width: 15%;
+    margin: 10px 0px 0px 0px;
+}
+
+#error{
+    color: red;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
